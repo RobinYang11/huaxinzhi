@@ -23,7 +23,6 @@
 </script>
 
 <style <style lang="less">
-     
     *{
       padding: 0 ;
       margin: 0 auto;

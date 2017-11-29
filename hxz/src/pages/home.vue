@@ -5,27 +5,22 @@
                     <div class="slide-banner">
                         <el-carousel indicator-position="outside">
                             <el-carousel-item v-for="(item,index) in banner" :key="index">
-                                <div class="img-item">
+                                
+                                <div class="img-item animated zoomIn">
                                     <img :src="item.img[0]" alt="">
                                 </div>
-                                <div class="img-item">
+                                <div class="img-item animated fadeIn ">
                                     <img :src="item.img[1]" alt="">
                                 </div>
-                                <div class="img-item" >
+                                <div class="img-item animated zoomIn" >
                                     <img :src="item.img[2]" alt="">
                                 </div>
+                                <h3 class="animated rotateIn">{{item.title}}</h3>
                             </el-carousel-item>
                         </el-carousel>
                     </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <transition-group name="fadeLeft" tag="h3">
-                                <h3>hellllooooooooo</h3>
-                                </transition-group>
-                            </li>
-                            <li>2</li>
-                        </ul>
+                    <div class="animated zoomIn">
+                       
                     </div>
             </div>
          </div>
@@ -39,15 +34,36 @@
             return {
                 banner:[
                     {
-                        title:"banner1",
+                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        img:[
+                            "/static/img/banner1-1.png",
+                            "/static/img/banner1-2.png",
+                            "/static/img/banner1-3.png",  
+                        ]
+                    }, {
+                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        img:[
+                            "/static/img/banner1-1.png",
+                            "/static/img/banner1-2.png",
+                            "/static/img/banner1-3.png",  
+                        ]
+                    },
+                     {
+                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        img:[
+                            "/static/img/banner1-1.png",
+                            "/static/img/banner1-2.png",
+                            "/static/img/banner1-3.png",  
+                        ]
+                    },
+                     {
+                        title:"如果暴力不是为了杀戮，那将毫无意义!",
                         img:[
                             "/static/img/banner1-1.png",
                             "/static/img/banner1-2.png",
                             "/static/img/banner1-3.png",  
                         ]
                     }
-                     
-                   
                 ]
             }
         },
@@ -61,18 +77,20 @@
     .bc{
         background-color:#041b3b;
     }
+
     .home{
-        
          background-color:#041b3b;
         .slide-banner{
            .el-carousel{
                 background-color:none !important;
                 .el-carousel__item h3 {
-                color: #475669;
-                font-size: 18px;
-                opacity: 0.75;
-                line-height: 300px;
-                margin: 0;
+                    position: relative;
+                    left: -200px;
+                    color: white;
+                    font-size: 15px;
+                    opacity: 0.75;
+                    line-height: 180px;
+                    margin: 0;
                 }
                 
                 .el-carousel__item .img-item{
@@ -80,13 +98,16 @@
                     top: 0px;
                     img {
                         width:50%;
-                        
                     }
+
+                    
                 }
+                .img-item:hover{
+                    top:10px;
+                }
+
                  .el-carousel__item{
                      background-color: transparent !important;
-                   
-                     
                  }
                 .el-carousel__item:nth-child(2n) {
                     background-color: #99a9bf;
