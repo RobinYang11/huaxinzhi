@@ -1,31 +1,33 @@
 <template>
-   <div class="home">
-        <div class="slide-banner">
-            <el-carousel indicator-position="outside">
-                <el-carousel-item v-for="(item,index) in banner" :key="index">
-                    <div class="img-item">
-                        <img :src="item.img[0]" alt="">
-                    </div>
-                    <div class="img-item">
-                        <img :src="item.img[1]" alt="">
-                    </div>
-                    <div class="img-item" >
-                        <img :src="item.img[2]" alt="">
-                    </div>
-                </el-carousel-item>
-             </el-carousel>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <transition-group name="fadeLeft" tag="h3">
-                      <h3>hellllooooooooo</h3>
-                    </transition-group>
-                </li>
-                <li>2</li>
-            </ul>
-        </div>
-   </div>
+     <div class="bc">
+         <div class="home">
+            <div class="slide-banner">
+                <el-carousel indicator-position="outside">
+                    <el-carousel-item v-for="(item,index) in banner" :key="index">
+                        <div class="img-item">
+                            <img :src="item.img[0]" alt="">
+                        </div>
+                        <div class="img-item">
+                            <img :src="item.img[1]" alt="">
+                        </div>
+                        <div class="img-item" >
+                            <img :src="item.img[2]" alt="">
+                        </div>
+                    </el-carousel-item>
+                </el-carousel>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <transition-group name="fadeLeft" tag="h3">
+                        <h3>hellllooooooooo</h3>
+                        </transition-group>
+                    </li>
+                    <li>2</li>
+                </ul>
+            </div>
+    </div>
+     </div>
 </template>
 <script>
     import panel from '../components/panel';
@@ -54,7 +56,9 @@
 </script>
 <style lang="less" scoped>
 
-
+    .bc{
+        background-color:#041b3b;
+    }
     .home{
         
          background-color:#041b3b;

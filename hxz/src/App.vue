@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <div class="wrapper">
-        <navigationBar></navigationBar>
+    <div class="top">
+        <div class="wrapper">
+          <navigationBar></navigationBar>
+        </div>
     </div>
-    <div class="wrapper">
-      <router-view/>
-    </div>
+      <div>
+         <router-view/>
+      </div>
   </div>
 </template>
 
@@ -26,16 +28,18 @@
       padding: 0 ;
       margin: 0 auto;
       .wrapper{
-        min-width: 1200px;
+        max-width: 1200px;
       }
       #app {
-        background-color:#fff;
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-      
+        .top{
+          background-color:#041b3b;
+        }
+        
       }
     }
     
