@@ -1,32 +1,34 @@
 <template>
      <div class="bc">
-         <div class="home">
-            <div class="slide-banner">
-                <el-carousel indicator-position="outside">
-                    <el-carousel-item v-for="(item,index) in banner" :key="index">
-                        <div class="img-item">
-                            <img :src="item.img[0]" alt="">
-                        </div>
-                        <div class="img-item">
-                            <img :src="item.img[1]" alt="">
-                        </div>
-                        <div class="img-item" >
-                            <img :src="item.img[2]" alt="">
-                        </div>
-                    </el-carousel-item>
-                </el-carousel>
+         <div class="wrapper">
+              <div class="home">
+                    <div class="slide-banner">
+                        <el-carousel indicator-position="outside">
+                            <el-carousel-item v-for="(item,index) in banner" :key="index">
+                                <div class="img-item">
+                                    <img :src="item.img[0]" alt="">
+                                </div>
+                                <div class="img-item">
+                                    <img :src="item.img[1]" alt="">
+                                </div>
+                                <div class="img-item" >
+                                    <img :src="item.img[2]" alt="">
+                                </div>
+                            </el-carousel-item>
+                        </el-carousel>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <transition-group name="fadeLeft" tag="h3">
+                                <h3>hellllooooooooo</h3>
+                                </transition-group>
+                            </li>
+                            <li>2</li>
+                        </ul>
+                    </div>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <transition-group name="fadeLeft" tag="h3">
-                        <h3>hellllooooooooo</h3>
-                        </transition-group>
-                    </li>
-                    <li>2</li>
-                </ul>
-            </div>
-    </div>
+         </div>
      </div>
 </template>
 <script>
