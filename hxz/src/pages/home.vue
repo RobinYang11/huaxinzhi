@@ -18,7 +18,9 @@
         <div>
             <ul>
                 <li>
-                    <panel></panel>
+                    <transition-group name="fadeLeft" tag="h3">
+                      <h3>hellllooooooooo</h3>
+                    </transition-group>
                 </li>
                 <li>2</li>
             </ul>
