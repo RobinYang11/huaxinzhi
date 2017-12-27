@@ -92,15 +92,12 @@
                     line-height: 180px;
                     margin: 0;
                 }
-                
                 .el-carousel__item .img-item{
                     position: absolute;
                     top: 0px;
                     img {
                         width:50%;
-                    }
-
-                    
+                    } 
                 }
                 .img-item:hover{
                     top:10px;
@@ -112,7 +109,7 @@
                 .el-carousel__item:nth-child(2n) {
                     background-color: #99a9bf;
                 }
-                
+
                 .el-carousel__item:nth-child(2n+1) {
                     background-color: #d3dce6;
                 }
