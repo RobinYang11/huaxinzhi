@@ -26,8 +26,9 @@ export default {
 </script>
 <style lang="less" scoped>
     .navgationBar{
-        padding: 10px;
-        background-color: #041b3b;
+        padding: 15px;
+        font-size: 15px;
+        color: rgb(64, 164, 195);
         display: flex;
         display: -webkit-flex;
         align-items: center;

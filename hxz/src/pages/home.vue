@@ -34,34 +34,34 @@
             return {
                 banner:[
                     {
-                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        title:"华信智 胜在用心 所有的灵感源自对企业的理解 所有的成就来自企业的认同",
                         img:[
                             "/static/img/banner1-1.png",
                             "/static/img/banner1-2.png",
                             "/static/img/banner1-3.png",  
                         ]
                     }, {
-                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        title:"",
                         img:[
-                            "/static/img/banner1-1.png",
-                            "/static/img/banner1-2.png",
-                            "/static/img/banner1-3.png",  
+                            "/static/img/banner2-1.png",
+                            "/static/img/banner2-2.png",
+                            "/static/img/banner2-3.png",  
                         ]
                     },
                      {
-                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        title:"",
                         img:[
-                            "/static/img/banner1-1.png",
-                            "/static/img/banner1-2.png",
-                            "/static/img/banner1-3.png",  
+                            "/static/img/banner3-1.png",
+                            "/static/img/banner3-2.png",
+                            "/static/img/banner3-3.png",  
                         ]
                     },
                      {
-                        title:"如果暴力不是为了杀戮，那将毫无意义!",
+                        title:"",
                         img:[
-                            "/static/img/banner1-1.png",
-                            "/static/img/banner1-2.png",
-                            "/static/img/banner1-3.png",  
+                            "/static/img/banner4-1.png",
+                            "/static/img/banner4-2.png",
+                            "/static/img/banner4-3.png",  
                         ]
                     }
                 ]
@@ -85,11 +85,12 @@
                 background-color:none !important;
                 .el-carousel__item h3 {
                     position: relative;
-                    left: -200px;
+                    font-family: Arial, Helvetica, sans-serif;
+                   font-weight: 100;
                     color: white;
                     font-size: 15px;
                     opacity: 0.75;
-                    line-height: 180px;
+                    line-height: 300px;
                     margin: 0;
                 }
                 .el-carousel__item .img-item{
