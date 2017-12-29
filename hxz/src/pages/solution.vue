@@ -14,10 +14,7 @@
             <div class="hotlinks">
                 <relatedLinks></relatedLinks>
             </div>
-        </div>
-        
-        
-            
+        </div>    
     </div>
 </template>
 <script>
