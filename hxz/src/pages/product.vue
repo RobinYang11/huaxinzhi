@@ -3,16 +3,19 @@
         <div class="imgbody">
             
         </div>
-        <div class="pbox">
-            <productList></productList>
-            <productList></productList>
-            <productList></productList>
-            <productList></productList>
+        <div class="contantbox">
+             <div class="pbox">
+                <productList></productList>
+                <productList></productList>
+                <productList></productList>
+                <productList></productList>
+            </div>
+                
+            <div class="hot_box">
+            <relatedLinks></relatedLinks>
+            </div>
         </div>
-            
-    <div class="hot_box">
-       <relatedLinks></relatedLinks>
-    </div>
+       
     </div>
 </template>
 <script>
@@ -33,20 +36,31 @@ export default {
         background-color: #fff;
         width: 1200px;
         margin: 30px auto;
-        .imgbody{
-            width: 100%;
-            img{
+        
+
+        .contantbox{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+        
+            .imgbody{
                 width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .pbox{
+                width: 900px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            }
+            .hot_box{
+                float: right;
+                width:25%; 
             }
         }
-        .pbox{
-            width: 900px;
-            float: left;
-        }
-        .hot_box{
-            float: right;
-            width:25%; 
-        }
+        
     }
 </style>
 

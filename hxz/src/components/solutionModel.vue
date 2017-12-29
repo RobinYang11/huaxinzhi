@@ -24,7 +24,7 @@ export default {
 <style lang="less" scoped>
     .solutionModel{
         width: 33%;
-        float: left;
+        
         .modelbox{
             padding: 15px;
             box-sizing: border-box;
@@ -60,10 +60,10 @@ export default {
             }
         }
         .imgbox:hover{
-                
+                cursor: pointer;
                 .hoverAnimates{
                     height: 100%;
-                    cursor: default;
+                    cursor: pointer;
                 }
             }
         }

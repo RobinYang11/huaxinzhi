@@ -1,19 +1,21 @@
 <template>
     <div class="solution">
-        
-        <div class="imgbody">
-            <h3>我们拥有成套的解决方案</h3>
-            <solutionModel></solutionModel>
-            <solutionModel></solutionModel>
-            <solutionModel></solutionModel>
-            <solutionModel></solutionModel>
-            <solutionModel></solutionModel>
-            <solutionModel></solutionModel>
+        <h3>我们拥有成套的解决方案</h3>
+        <div class="rowbox">
+            <div class="imgbody">
+                <solutionModel></solutionModel>
+                <solutionModel></solutionModel>
+                <solutionModel></solutionModel>
+                <solutionModel></solutionModel>
+                <solutionModel></solutionModel>
+                <solutionModel></solutionModel>
 
+            </div>
+            <div class="hotlinks">
+                <relatedLinks></relatedLinks>
+            </div>
         </div>
-        <div class="hotlinks">
-            <relatedLinks></relatedLinks>
-        </div>
+        
         
             
     </div>
@@ -38,26 +40,34 @@ export default {
         display: block;
         box-sizing: border-box;
         margin-top: 30px;
-
-        h3{
+        .rowbox{
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            h3{
             width: 100%;
             text-align: center;
             margin-bottom: 15px;
-        }
-        .imgbody{
-            width: 75%;
-            float: left;
-            
-            
-            img{
-                width: 100%;
+            }
+            .imgbody{
+                width: 75%;
+                display: flex;
+                display: -webkit-flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                
+                img{
+                    width: 100%;
+                }
+            }
+            .hotlinks{
+                width: 25%;
+                float: right;
+                box-sizing: border-box;
             }
         }
-        .hotlinks{
-            width: 25%;
-            float: right;
-            box-sizing: border-box;
-        }
+        
     }
 </style>
 
