@@ -37,7 +37,7 @@ export default {
     .panel{
         color: white;
         position: relative;
-        max-width: 295px;
+        max-width: 270px;
         height: 180px;
         overflow: hidden;
         box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);

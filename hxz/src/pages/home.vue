@@ -29,11 +29,13 @@
             </div>
         </div>
         <div class="main">
-           <div class="panel-container" >
+            <div class="wrapper">
+                <div class="panel-container" >
                 <div v-for=" key in datas " >
                      <panel v-bind:msg="key"></panel>
                 </div>
-           </div>
+                </div>
+            </div>
         </div>
         <div class="item-title">
             <div >
