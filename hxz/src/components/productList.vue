@@ -9,6 +9,7 @@
             <p class="contant">电子证照系统 依托地方电子证照规范开发的提供电子证照的制作，存储，信息查询，交换共享的信息系统，为地方电子政务提供服务。</p>
             <el-button class="elbutton" type="primary" >
                 <router-link to="/productDetail">查看更多</router-link>
+                <!-- <a href="product/productDetail">dddddddddddd</a> -->
             </el-button>
           </div>   
         </div>

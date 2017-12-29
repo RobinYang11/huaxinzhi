@@ -14,20 +14,26 @@ export default new Router({
       path: '/',
       name: 'home',
       component: home
-    }, {
+    },
+
+    {
       path: '/product',
       name: 'product',
-      component: product
-    },{
+      component: product,
+    },
+    {
       path: '/productDetail',
       name: 'productDetail',
-      component: productDetail
-    },{
+      component: productDetail,
+    },
+
+    {
       path: '/solution',
       name: 'solution',
       component: solution
     }
-    
+
   ],
+
   mode:"history"
 })
