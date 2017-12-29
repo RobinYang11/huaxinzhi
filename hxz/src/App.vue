@@ -5,19 +5,24 @@
           <navigationBar></navigationBar>
         </div>
     </div>
-      <div>
-         <router-view/>
-      </div>
+    <main>
+        <router-view/>
+    </main>
+    <div>
+       <foot></foot>
+    </div>
   </div>
 </template>
 
 <script>
     import navigationBar from './components/navigationBar';
-    
+    import foot from './components/foot';
     export default {
+      
       name: 'app',
       components:{
-        navigationBar
+        navigationBar,
+        foot
       }
     }
 </script>
@@ -41,5 +46,16 @@
         
       }
     }
-    
+    li{
+      list-style: none;
+    }
+    .btn-opcity{
+       background: none;
+       padding:5px;
+       border-radius:6px;
+       box-shadow:none;
+       border-style: none;
+       border:1px solid white;
+       color: white;
+    }
 </style>

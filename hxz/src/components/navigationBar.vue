@@ -21,7 +21,9 @@
 </template>
 <script>
 export default {
-  name:"navgationBar"
+  name:"navgationBar",
+
+ 
 }
 </script>
 <style lang="less" scoped>

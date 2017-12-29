@@ -1,30 +1,61 @@
 <template>
     <div class="panel">
-         <div class="panel-heading">
-
+         <!-- <div class="panel-heading">
+         </div> -->
+         <div class="panel-heading">    
+              <div>
+                 <img  :src="msg.imgSrc" alt="">
+              </div>
          </div>
          <div class="panel-body">
-                <h1>this is panel</h1>
+              <h4>{{msg.t1}}</h4>
+              <h6>{{msg.t2}}</h6>
+              <p>
+                  {{msg.des}}
+              </p>
+              <div style="text-align:right">
+                  <button class="btn-opcity" >
+                    查看详情
+                  </button>
+              </div>
          </div>
-         <div class="panel-footer">
-
-         </div>
+      
     </div>
 </template>
 <script>
 export default {
-  name:'panel'
+  props:['msg'],
+  name:'panel',
+  data:function(){
+      return {
+          
+      }
+  }
 }
 </script>
 <style lang="less" scoped>
     .panel{
-        box-shadow: 0ch;
+        color: white;
+        position: relative;
+        max-width: 295px;
+        height: 180px;
+        overflow: hidden;
+        box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
+        border-radius: 6px;
         .panel-heading{
-            background-color: red;
+            overflow: hidden;   
         }
-        .panel-footer{
-            
+        .panel-body{
+            padding: 7px;
+            text-align: left;
+            z-index: 100;
+            position: absolute;
+            top:26px;
+            left:10px;
+            p{
+                    font-size: 14px;
+            }
         }
-    }
+       }
 </style>
 
