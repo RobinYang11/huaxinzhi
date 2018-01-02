@@ -23,6 +23,7 @@
 export default {
   name:"navgationBar",
 
+
  
 }
 </script>

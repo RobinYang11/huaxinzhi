@@ -160,8 +160,8 @@ export default {
         display:-webkit-flex;
         background-image: url("/static/img/bombg.png");
         background-repeat: no-repeat;
-        background-position: center;
-        min-height: 640px;
+        background-position: 100% 100%;
+        min-height: 600px;
          margin-top: 55px;
         width: 100%;
         ul{
