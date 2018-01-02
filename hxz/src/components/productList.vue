@@ -5,13 +5,14 @@
         <div class="listbox"  >
            <div class="borders">
             <div class="head">云照通电子证照共享平台系统</div>
-            <img src="/static/img/chanPin-camoro.jpg" alt="" >
+            
             <p class="contant">电子证照系统 依托地方电子证照规范开发的提供电子证照的制作，存储，信息查询，交换共享的信息系统，为地方电子政务提供服务。</p>
             <el-button class="elbutton" type="primary" >
                 <router-link to="/productDetail">查看更多</router-link>
                 <!-- <a href="product/productDetail">dddddddddddd</a> -->
             </el-button>
-          </div>   
+          </div> 
+          <img src="/static/img/chanPin-email.jpg" alt="" >  
         </div>
     </div>
     
@@ -60,30 +61,30 @@ export default {
 <style lang="less" scoped>
 
     .priductList{
-        width: 25%;
-        margin: auto;
-        float: left;
+        width: 100%;
+        margin:  auto;
+        padding: 45px;
+        box-sizing: border-box;
+        
         .list{
-            float: left;
+           
                  .listbox{
-                    width: 100%;
                     box-sizing: border-box;
-                    padding: 0 12px;
+                    padding: 0 ;
                     display: flex;
-                    float: left;
+                     max-width: 1200px;
+                     background-color: #ffffff;
+
                    .borders{
-                        width: 100%;
-                        border: 1px solid #ccc;
                         display: flex;
                         flex-direction: column;
                         text-align: left;
-                        margin: 12px auto;
-                        padding:  0px;
-                        float: left;
+                        padding:  5%;
                         box-sizing: border-box;
+                        position: relative;
+
                         .head{
                             font-size: 20px;
-                            
                             color:#26323e;
                             text-align: center;
                             overflow: hidden;
@@ -106,8 +107,13 @@ export default {
                                 color: #ffffff;
                             }
                         button{
-                            margin: 12px 15px;
+                            margin: 12px auto;
                             background-color: #4ea3f3;
+                            max-width: 120px;
+                            position: absolute;
+                            bottom: 30px;
+                            right: 40px;
+
                         }    
                         img{
                             width: 100%;
@@ -116,14 +122,14 @@ export default {
                         
                     }
                 }
-                .borders:hover{
-                    box-shadow: 0px 0px 5px  #549fff;
-                    border: 1px solid #549fff;
+                // .borders:hover{
+                //     box-shadow: 0px 0px 5px  #549fff;
+                //     border: 1px solid #549fff;
 
-                    .head{
-                        color: #549fff;
-                    }
-                }
+                //     .head{
+                //         color: #549fff;
+                //     }
+                // }
         }
         
     }

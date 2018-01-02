@@ -1,25 +1,28 @@
 <template>
     <div class="solution">
-        <h3>我们拥有成套的解决方案</h3>
+        <juMu></juMu>
+        <h1>我们拥有成套的解决方案</h1>
         <div class="rowbox">
             <div class="imgbody">
+              
+                <!-- <solutionModel></solutionModel>
                 <solutionModel></solutionModel>
                 <solutionModel></solutionModel>
                 <solutionModel></solutionModel>
                 <solutionModel></solutionModel>
-                <solutionModel></solutionModel>
-                <solutionModel></solutionModel>
-
+                <solutionModel></solutionModel> -->
+            <textTmp></textTmp>
+            
             </div>
-            <div class="hotlinks">
-                <relatedLinks></relatedLinks>
-            </div>
+            
         </div>    
     </div>
 </template>
 <script>
+import juMu from "../components/detailComponents/juMu"
 import relatedLinks from "../components/relatedLinks"
 import solutionModel from "../components/solutionModel"
+import textTmp from "../components/detailComponents/textTmp"
 export default {
   name:"solution",
   data:function(){
@@ -27,33 +30,31 @@ export default {
 
       }
   },
-  components:{relatedLinks,solutionModel}
+  components:{relatedLinks,solutionModel,textTmp,juMu}
 }
 </script>
 <style lang="less" scoped>
     .solution{
-        width: 1200px;
         background-color: #fff;
         display: block;
         box-sizing: border-box;
-        margin-top: 30px;
+
+            h1{
+                margin-top: 35px;
+            }
         .rowbox{
             display: flex;
             display: -webkit-flex;
-            flex-direction: row;
+            
             h3{
             width: 100%;
             text-align: center;
             margin-bottom: 15px;
             }
             .imgbody{
-                width: 75%;
                 display: flex;
                 display: -webkit-flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                
+                width: 100%;
                 img{
                     width: 100%;
                 }
