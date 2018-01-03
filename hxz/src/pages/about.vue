@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-      <juMu></juMu>
+      <juMu v-bind:pdata="pdata"></juMu>
       <div class="concstus">
           <div class="linebox">
                <p>关于华信智</p>
@@ -79,6 +79,15 @@
 import juMu from "../components/detailComponents/juMu"
 export default {
   name:"about",
+  data:function(){
+      return{
+          pdata:{
+              h1:"关于华信智",
+              p1:"我们秉承认真做事认真做人全心全意为顾客服务的理念",
+              p2:"专注　专业　至臻　至善"
+          }
+      }
+  },
   components:{
       juMu
   }

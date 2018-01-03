@@ -1,7 +1,7 @@
 <template>
   <div class="productDetail">
       
-      <juMu></juMu>
+      <juMu v-bind:pdata="pdata"></juMu>
       <textTmp></textTmp>
       
       
@@ -83,7 +83,12 @@ export default {
                 imglist:[{src:"",contantp:""},{src:"",contantp:""}],
                 contantlist:[{h5:"",contantp:""},{h5:"",contantp:""}]
                 }
-        ]
+        ],
+        pdata:{
+              h1:"关于华信智",
+              p1:"我们秉承认真做事认真做人全心全意为顾客服务的理念",
+              p2:"专注　专业　至臻　至善"
+          }
       }
  
  },

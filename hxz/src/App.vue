@@ -41,7 +41,9 @@
       .wrapper{
         max-width: 1200px;
       }
-        
+        .router-link-exact-active{
+           border-bottom: 1px solid rgb(84, 159, 255);
+        }
       #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;

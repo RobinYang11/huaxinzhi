@@ -1,15 +1,16 @@
 <template>
     <div class="juMu">
         <div class="wrapper padding50">
-            <h1>产品服务</h1>
-            <p>我们公司的产品理念特别好 特别好我们的产品特别好</p>
-            <p>我们的产品特别好我们的产品特别好我们的产品特别好我们的产品特别好</p>
+            <h1 >{{pdata.h1}}</h1>
+            <p>{{pdata.p1}}</p>
+            <p>{{pdata.p2}}</p>
         </div>
     </div>
 </template>
 <script>
 export default {
-  name:"juMu"
+  name:"juMu",
+  props:['pdata']
 }
 </script>
 <style lang="less" scoped>
