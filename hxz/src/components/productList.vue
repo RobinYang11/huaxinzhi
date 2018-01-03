@@ -1,18 +1,18 @@
 <template>
   <div class="priductList">
     
-    <div class="list">
+    <div class="list"v-for="n in lists">
         <div class="listbox"  >
-           <div class="borders">
-            <div class="head">云照通电子证照共享平台系统</div>
+           <div class="borders" >
+            <div class="head">{{n.head}}</div>
             
-            <p class="contant">电子证照系统 依托地方电子证照规范开发的提供电子证照的制作，存储，信息查询，交换共享的信息系统，为地方电子政务提供服务。</p>
+            <p class="contant">{{n.contant}}</p>
             <el-button class="elbutton" type="primary" >
                 <router-link to="/productDetail">查看更多</router-link>
                 <!-- <a href="product/productDetail">dddddddddddd</a> -->
             </el-button>
           </div> 
-          <img src="/static/img/chanPin-email.jpg" alt="" >  
+          <img :src="n.src" alt="" >  
         </div>
     </div>
     
@@ -54,7 +54,49 @@ export default {
         
       
         
-  }
+  },
+  beforeCreate: function() { 
+         
+console.log("创建前")            
+console.log(this.a)            
+console.log(this.$el)          
+},         
+ created: function() {
+                console.log("创建之后");            
+console.log(this.a)            
+console.log(this.$el)          
+},         
+ beforeMount: function() {            
+console.log("mount之前")            
+console.log(this.a)            
+console.log(this.$el)          
+},          
+mounted: function() {            
+console.log("mount之后")            
+console.log(this.a)            
+console.log(this.$el)          
+},          
+beforeUpdate: function() {            
+console.log("更新前");            
+console.log(this.a)            
+console.log(this.$el)          
+},          
+updated: function() {            
+console.log("更新完成");            
+console.log(this.a);            
+console.log(this.$el)          
+},          
+beforeDestroy: function() {            
+console.log("销毁前");            
+console.log(this.a)            
+console.log(this.$el)            
+console.log(this.$el)          
+},          
+destroyed: function() {           
+console.log("已销毁");          
+console.log(this.a)          
+console.log(this.$el)          
+}   
 
 }
 </script>
@@ -67,12 +109,14 @@ export default {
         box-sizing: border-box;
         
         .list{
-           
+           margin-top: 35px;
+
                  .listbox{
                     box-sizing: border-box;
                     padding: 0 ;
                     display: flex;
                      max-width: 1200px;
+                     background-color: #fff;
                      background-color: #ffffff;
 
                    .borders{
@@ -122,14 +166,7 @@ export default {
                         
                     }
                 }
-                // .borders:hover{
-                //     box-shadow: 0px 0px 5px  #549fff;
-                //     border: 1px solid #549fff;
-
-                //     .head{
-                //         color: #549fff;
-                //     }
-                // }
+                
         }
         
     }

@@ -5,11 +5,11 @@
         </div>
         <div>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/product">产品服务</a></li>
-                <li><a href="/solution">解决方案</a></li>
-                <li><a href="/service">技术支持</a></li>
-                <li><a href="/about">关于我们</a></li>
+                <li><router-link to="/">首页</router-link></li>
+                <li><router-link to="/product">产品服务</router-link></li>
+                <li><router-link to="/solution">解决方案</router-link></li>
+                <li><router-link to="/service">技术支持</router-link></li>
+                <li><router-link to="/about">关于我们</router-link></li>
             </ul>
         </div>
         <div>
@@ -22,6 +22,7 @@
 <script>
 export default {
   name:"navgationBar",
+
 
  
 }
@@ -44,8 +45,12 @@ export default {
                     text-decoration: none;
                     color:white;
                 }
+                a:hover{
+                    border-bottom: 1px solid rgb(84, 159, 255);
+                }
             }
         }
+        
     }
 </style>
 

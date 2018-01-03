@@ -1,6 +1,6 @@
 <template>
     <div class="solution">
-        <juMu></juMu>
+        <juMu v-bind:pdata="pdata"></juMu>
         <h1>我们拥有成套的解决方案</h1>
         <div class="rowbox">
             <div class="imgbody">
@@ -27,7 +27,11 @@ export default {
   name:"solution",
   data:function(){
       return {
-
+          pdata:{
+              h1:"解决方案",
+              p1:"我们秉承认真做事认真做人全心全意为顾客服务的理念",
+              p2:"专注　专业　至臻　至善"
+          }
       }
   },
   components:{relatedLinks,solutionModel,textTmp,juMu}

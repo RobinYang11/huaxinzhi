@@ -1,14 +1,13 @@
 <template>
     <div class="product">
         
-        <juMu></juMu>
+        <juMu　v-bind:pdata="pdata"></juMu>
         <div class="bg">
         <div class="contantbox">
              <div class="pbox">
+                 <button v-on:click="changge">123123123</button>
                 <productList></productList>
-                <productList></productList>
-                <productList></productList>
-                <productList></productList>
+                
             </div>
                 
             <!-- <div class="hot_box">
@@ -26,7 +25,11 @@ export default {
   name:"product",
   data:function(){
       return {
-
+          pdata:{
+              h1:"华信智的产品",
+              p1:"我们秉承认真做事认真做人全心全意为顾客服务的理念",
+              p2:"专注　专业　至臻　至善"
+          }
       }
   },
   components:{productList,relatedLinks,juMu}
@@ -34,11 +37,7 @@ export default {
 </script>
 <style lang="less" scoped>
     .product{
-        background-color: #fff;
-        
         margin:  auto;
-        
-
 
         .bg{
             background-color: #f2f2f2;
@@ -50,7 +49,6 @@ export default {
             justify-content: flex-start;
             flex-direction: row;
             padding: 20px 0;
-            
             background-color: #e2e4e7;
         
             .imgbody{
