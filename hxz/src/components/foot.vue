@@ -79,7 +79,7 @@
                 }
             }
             .el-main{
-                line-height: 150px;
+                line-height: 140px;
                 ul{
                     
                     li{

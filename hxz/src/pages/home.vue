@@ -25,6 +25,7 @@
             <div>
                 <!-- <img src="static/img/ddd.png" alt=""> -->
                 <h3>海纳百川，精选打造高品质软件与服务</h3>
+                <br>
                 <p>智能制造 互联网电商 互联网党建 政企事业</p>
             </div>
         </div>
@@ -40,13 +41,15 @@
         <div class="item-title">
             <div >
                 <!-- <img src="static/img/ddd.png" alt=""> -->
-                <h3>海纳百川，精选全球的高品质软件与服务</h3>
-                <p>智能制造 互联网电商 互联网党建 政企事业</p>
+                <h3>经典案例</h3>
+                <br>
+                <p>宝剑锋从磨砺出 梅花香自苦寒来</p>
             </div>
         </div>
         <div class="cases">
             <div class="wrapper">
                 <leftRightPanel></leftRightPanel>
+                
             </div>
         </div>
     </div>
