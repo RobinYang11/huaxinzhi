@@ -1,19 +1,13 @@
 <template>
     <div class="product">
-        
         <juMu　v-bind:pdata="pdata"></juMu>
         <div class="bg">
-        <div class="contantbox">
-             <div class="pbox">
-                 <button v-on:click="changge">123123123</button>
-                <productList></productList>
+            <div class="contantbox">
+                <div class="pbox">
+                    <productList></productList>
+                </div>
                 
             </div>
-                
-            <!-- <div class="hot_box">
-            <relatedLinks></relatedLinks>
-            </div> -->
-        </div>
         </div>
     </div>
 </template>

@@ -1,64 +1,12 @@
 <template>
   <div class="productDetail">
-      
       <juMu v-bind:pdata="pdata"></juMu>
       <textTmp></textTmp>
-      
-      
-      <!-- <div class="contantbox">
-            <div class="giantScreenBox">
-                <img src="/static/img/banner1.png" alt="" srcset="">
-            </div>
-            <div class="titleBox">
-                <h2> 
-                云照通电子证照共享平台系统
-                </h2> 
-                <div class="line"></div>  
-            </div>
-            <div v-for="c in contant" class="chrildren">
-                <div class="titleBox">
-                    <h5>{{c.title}}</h5>
-                    <div class="line"></div>
-                </div>
-                
-                <p class="contant">{{c.contantp}}</p>
-            </div>
-            <div class="imgBox">
-                <div class="title">
-                    <h3>服务对象</h3>
-                    <div class="line"></div>  
-                </div>
-                <div class="imgbox" >
-                    <img src="/static/img/banner4-1.png" alt="" srcset="">
-                </div>
-                
-            </div>
-            <div class="imgBox" >
-                <div class="title">
-                    <h3>总体框架图</h3>
-                    <div class="line"></div>  
-                </div>
-                <div class="imgbox">
-                    <img src="/static/img/banner4-1.png" alt="" srcset="">
-                </div>
-            </div>
-            <div v-for="c in contant" class="chrildren">
-                <div class="titleBox">
-                    <h5>{{c.title}}</h5>
-                    <div class="line"></div>
-                </div>
-                
-                <p class="contant">{{c.contantp}}</p>
-            </div>
-      </div>
-       -->
   </div>
-
 </template>
 <script>
 import juMu from "../components/detailComponents/juMu"
- import textTmp from "../components/detailComponents/textTmp"
-
+import textTmp from "../components/detailComponents/textTmp"
 export default {
   name:"productDetail",
   data:function () {
@@ -90,16 +38,13 @@ export default {
               p2:"专注　专业　至臻　至善"
           }
       }
- 
  },
     components:{juMu,textTmp}
 }
 </script>
 <style lang="less" scoped>
     .productDetail{
-        
         margin: 10 auto;
-
         .contantbox{
             width: 1200px;
             .chrildren{

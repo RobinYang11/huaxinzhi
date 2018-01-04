@@ -24,15 +24,16 @@ export default {
         background-image: url("/static/img/tdsbg.jpg");
         background-repeat: no-repeat;
         background-position:100% 100%; 
-        
+        min-height: 500px;
         max-width: 1200px;
         h3{
             margin: 35px 0 20px;
         }
         .cbox{
-            width: 50%;
+            width: 100%;
             margin: 0;
             padding: 25px;
+            box-sizing: border-box;
             p{
                 text-align: justify;
                 text-indent: 2em;

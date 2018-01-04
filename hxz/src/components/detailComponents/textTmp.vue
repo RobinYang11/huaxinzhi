@@ -21,7 +21,7 @@
           <div class="wrapper cont">
             <div class="tbox" v-for="n in maintext">
                 <h1>{{n.h1}}</h1>
-                <p>{{n.p}}</p>
+                <p>{{n.pcnt}}</p>
             </div>
            
           </div>

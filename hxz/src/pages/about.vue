@@ -6,7 +6,6 @@
                <p>关于华信智</p>
                <div class="line"></div>
           </div>
-         
           <p>银川华信智信息技术有限公司自成立以来始终致力于企业信息化事业的发展
               ，以提高企业信息化运营效能为己任。主要业务涵盖，IT服务外包、软件开发、
               电子商务及系统集成，是专业企业信息管理系统一体化方案提供商、
@@ -23,10 +22,6 @@
       </div>
       <div class="workers">
          <h3>公司各类产品图示</h3>
-         <!-- <div class="">
-            <img src="/static/img/persons.jpg" alt="" srcset="">
-            <p>一份汗水一份收获，辛勤耕耘，努力拼搏，创造美好明天</p>
-         </div> -->
          <el-carousel :interval="3000" type="card" height="400px">
             <el-carousel-item >
                 <img src="/static/img/persons.jpg" alt="" srcset="">
@@ -127,8 +122,7 @@ export default {
                         width: 200px;
                         margin-top: 15px;
                         padding: 10px;
-                         box-sizing: border-box;
-
+                        box-sizing: border-box;
                     }
                     textarea{
                         width: 200px;
@@ -136,7 +130,6 @@ export default {
                         box-sizing: border-box;
                         padding: 5px;
                     }
-
                     
                     .submit{
                         background-color: #ffd105;
@@ -173,7 +166,7 @@ export default {
                             cursor: pointer;
                             text-decoration: underline;
                         }
-                }
+                    }
                 }
                 
             }
@@ -181,9 +174,7 @@ export default {
                 padding: 50px;
                background-color: #121e37;
             }
-
         }
-
         .concstus{
             width: 1200px;
             padding: 20px 0;
@@ -198,8 +189,6 @@ export default {
                     font-size: 32px;
                     font-weight: 700;
                     text-indent: 0;
-
-                    
                 }
                 .line{
                     border: 1px solid #999;
@@ -214,10 +203,8 @@ export default {
                 letter-spacing: 1.14px;
                 line-height: 28px;
                 font-size: 16px;
-
             }
         }
-        
     }
 .el-carousel__item h3 {
     color: #475669;
