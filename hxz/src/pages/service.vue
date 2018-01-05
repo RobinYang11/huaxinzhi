@@ -3,7 +3,7 @@
         <banav></banav>
         <fwjs></fwjs> 
         <hti></hti>
-        <div v-for=" key in datas " >
+        <div v-for="key in datas" >
            <znz  v-bind:zgz="key"></znz> 
         </div>
         <div class="content">
@@ -54,19 +54,19 @@ export default {
                 "da1":'智能顾问',
                 "da2":'智能诊断，多端触达，即时应答的云产品顾问',
                 "da3":'开始对话',
-                "imgSrc":"../../static/img/znz1.png"
+                "imgSrc":"/static/img/znz1.png"
             },
             {
                 "da1":'云享（专家分享）',
                 "da2":'多年云计算服务经验和技术分享',
                 "da3":'查看详情',
-                "imgSrc":"../../static/img/znz2.png"
+                "imgSrc":"/static/img/znz2.png"
             },
             {
                 "da1":'文档与视频',
                 "da2":'丰富的产品介绍文档和视频',
                 "da3":'查看详情',
-                "imgSrc":"../../static/img/znz3.png"
+                "imgSrc":"/static/img/znz3.png"
             }
         ]
     };

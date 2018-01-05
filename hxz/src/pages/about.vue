@@ -21,7 +21,7 @@
                通过平台化的柔性扩展，做到真正符合企业实际的智能信息管理系统平台。</p>
       </div>
       <div class="workers">
-         <h3>公司各类产品图示</h3>
+         <h3>公司精彩活动</h3>
          <el-carousel :interval="3000" type="card" height="400px">
             <el-carousel-item >
                 <img src="/static/img/persons.jpg" alt="" srcset="">
@@ -41,7 +41,7 @@
         </el-carousel>
         
      </div>
-      <div class="aboutfoot">
+      <!-- <div class="aboutfoot">
           <div class="wrapper">
             
             <div class="hotlinks">
@@ -67,7 +67,7 @@
 
           </div>
          
-      </div>
+      </div> -->
   </div>
 </template>
 <script>
@@ -96,85 +96,9 @@ export default {
                 h3{
                     margin: 45px auto 25px;
                 }
-                img{
-                    
-                }
-            }
-        .aboutfoot{
-            width: 100%;
-            background-color: #16233e;
-            padding: 30px;
-            
-
-            .wrapper{
-                display: flex;
-                display: -webkit-flex;
-                flex-direction: row;
-                color: #ebebeb;
-                font-size: 16px;
-                form{
-                    display: flex;
-                    display: -webkit-flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    input{
-                        width: 200px;
-                        margin-top: 15px;
-                        padding: 10px;
-                        box-sizing: border-box;
-                    }
-                    textarea{
-                        width: 200px;
-                        margin-top: 15px;
-                        box-sizing: border-box;
-                        padding: 5px;
-                    }
-                    
-                    .submit{
-                        background-color: #ffd105;
-                        border: 1px solid #16233e;
-                    }
-                    .submit:hover{
-                        border: 1px solid #ffd105;
-                        background-color: #16233e;
-                        color: #ffd105;
-                        cursor: pointer;
-                    }
-
-                }
-            }
-            
-            .hotlinks{
-                width: 33%;
-                color:#ebebeb;
-                ul{
-                    list-style: inside;
-                    padding: 25px;
-                        li{
-                    list-style: inside;
-                    text-align: left;
-                    margin-top: 15px;
-                        a{
-                        color:#ebebeb ;  
-                        }
-                        a:active{
-                            color: #ebebeb;
-                        }
-                        a:hover{
-                            color: #ffd105;
-                            cursor: pointer;
-                            text-decoration: underline;
-                        }
-                    }
-                }
                 
             }
-            .constus{
-                padding: 50px;
-               background-color: #121e37;
-            }
-        }
+        
         .concstus{
             width: 1200px;
             padding: 20px 0;
